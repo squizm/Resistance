@@ -9,7 +9,6 @@
     {"id":{"name":"GenerateName","path":"scripts/GenerateName/GenerateName.yy",},"order":2,},
     {"id":{"name":"sprCharacters","path":"sprites/sprCharacters/sprCharacters.yy",},"order":0,},
     {"id":{"name":"GetNumAdjacentWalls","path":"scripts/GetNumAdjacentWalls/GetNumAdjacentWalls.yy",},"order":1,},
-    {"id":{"name":"animGrow","path":"animcurves/animGrow/animGrow.yy",},"order":0,},
     {"id":{"name":"objCharacter","path":"objects/objCharacter/objCharacter.yy",},"order":1,},
     {"id":{"name":"sprUI","path":"sprites/sprUI/sprUI.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
