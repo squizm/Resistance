@@ -2,7 +2,8 @@
 #macro TILE_TREE 13
 #macro TILE_GRASS 5
 
-
+recGIF = false;
+gifImg = noone;
 depth = -1;
 randomize();
 draw_set_font(fntSystem)

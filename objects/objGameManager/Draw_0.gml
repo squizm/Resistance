@@ -11,3 +11,7 @@ if(!surface_exists(surf_tilemap)){
 } else {
 	draw_surface(surf_tilemap,0,0);
 }
+
+if(recGIF){
+	draw_circle_color(16, room_height - 16, 8, c_red, c_red,false)
+}
