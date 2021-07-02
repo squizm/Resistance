@@ -1,0 +1,9 @@
+#macro TILE_EMPTY 0
+#macro TILE_TREE 13
+#macro TILE_GRASS 5
+
+
+enum CHARACTER_TYPE{
+	PLAYER, 
+	MONSTER
+}

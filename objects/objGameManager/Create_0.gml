@@ -1,7 +1,3 @@
-#macro TILE_EMPTY 0
-#macro TILE_TREE 13
-#macro TILE_GRASS 5
-
 recGIF = false;
 gifImg = noone;
 depth = -1;
@@ -31,13 +27,15 @@ for(var i = 0; i < 10; i+= 1)
 		}
 	}
 	var char = instance_create_layer(foundX*16, foundY*16, "Instances", objCharacter);
-	char.isPlayer = false;
 	char.depth = -2;
 	if(i == 0)
 	{
+		setupCharacter(char,CHARACTER_TYPE.PLAYER)
 		char.isPlayer = true;
 		char.image_index = 1;
 		camera_set_view_target(view_camera[0],char)
+	} else {
+		setupCharacter(char,CHARACTER_TYPE.MONSTER);	
 	}
 }
 

@@ -7,10 +7,14 @@
     {"id":{"name":"sprTerrain","path":"sprites/sprTerrain/sprTerrain.yy",},"order":1,},
     {"id":{"name":"sprFaces","path":"sprites/sprFaces/sprFaces.yy",},"order":3,},
     {"id":{"name":"GenerateName","path":"scripts/GenerateName/GenerateName.yy",},"order":2,},
+    {"id":{"name":"Data","path":"scripts/Data/Data.yy",},"order":6,},
+    {"id":{"name":"playerStates","path":"scripts/playerStates/playerStates.yy",},"order":0,},
+    {"id":{"name":"MonsterStates","path":"scripts/MonsterStates/MonsterStates.yy",},"order":1,},
     {"id":{"name":"sprCharacters","path":"sprites/sprCharacters/sprCharacters.yy",},"order":0,},
-    {"id":{"name":"GetNumAdjacentWalls","path":"scripts/GetNumAdjacentWalls/GetNumAdjacentWalls.yy",},"order":1,},
+    {"id":{"name":"stateMachine","path":"scripts/stateMachine/stateMachine.yy",},"order":4,},
     {"id":{"name":"objCharacter","path":"objects/objCharacter/objCharacter.yy",},"order":1,},
     {"id":{"name":"sprUI","path":"sprites/sprUI/sprUI.yy",},"order":2,},
+    {"id":{"name":"setupCharacter","path":"scripts/setupCharacter/setupCharacter.yy",},"order":7,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -44,6 +48,7 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/States.yy","order":5,"resourceVersion":"1.0","name":"States","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

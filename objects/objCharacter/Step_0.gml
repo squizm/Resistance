@@ -1,3 +1,5 @@
+state_execute()
+/*
 if(isPlayer) {
 	key_right = keyboard_check_released(ord("D"));
 	key_left = keyboard_check_released(ord("A"));
@@ -34,4 +36,5 @@ timer++;
 if(timer > 100){
 	timer =  0;
 }
+*/
 	
