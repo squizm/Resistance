@@ -34,12 +34,12 @@ function player_state_idle() {
 function player_state_move() {
 
 	if(x != destX) {
-		x = lerp(x, destX, 0.5);
+		x = lerp(x, destX, 0.25);
 		if(abs(destX - x) < 1) { x = destX}
 	}
 
 	if(y != destY) {
-		y = lerp(y, destY, 0.5);
+		y = lerp(y, destY, 0.25);
 		if(abs(destY - y) < 1) { y = destY}
 	}
 
