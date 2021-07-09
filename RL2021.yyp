@@ -1,6 +1,6 @@
 {
   "resources": [
-    {"id":{"name":"GenerateTerrain","path":"scripts/GenerateTerrain/GenerateTerrain.yy",},"order":0,},
+    {"id":{"name":"TerrainFunctions","path":"scripts/TerrainFunctions/TerrainFunctions.yy",},"order":0,},
     {"id":{"name":"fntSystem","path":"fonts/fntSystem/fntSystem.yy",},"order":0,},
     {"id":{"name":"objGameManager","path":"objects/objGameManager/objGameManager.yy",},"order":0,},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"order":0,},

@@ -12,25 +12,27 @@ function player_state_idle() {
 
 	if(hmove != 0 or vmove != 0)
 	{
-		var gm = instance_find(objGameManager,0);
 		var myTileX = x div 16;
 		var myTileY = y div 16;
 		var destTileX = hmove + myTileX
 		var destTileY = vmove + myTileY
+		var tilemapID = layer_get_id("Tiles");
+		var tilemap_cell_width = tilemap_get_width(layer_tilemap_get_id(tilemapID));
+		var tilemap_cell_height = tilemap_get_height(layer_tilemap_get_id(tilemapID));
 	
-		if(destTileX >= 0 && destTileX < ds_grid_width(gm.grid) && destTileY >= 0 && destTileY < ds_grid_height(gm.grid))
+		if(destTileX > 0 && destTileX < tilemap_cell_width && destTileY > 0 && destTileY < tilemap_cell_height)
 		{
-			if(ds_grid_get(gm.grid,destTileX,destTileY) != TILE_TREE){
+			if(TileIsWalkable(destTileX, destTileY)){
 				destX = destTileX * 16;
 			}
 	
-			if(ds_grid_get(gm.grid,destTileX,destTileY) != TILE_TREE){
+			if(TileIsWalkable(destTileX, destTileY)){
 				destY = destTileY * 16;
 			}
 			state_switch("Move")
 		} else {
-			destX = destTileX * 8;
-			destY = destTileY * 8
+			destX = destTileX * 16;
+			destY = destTileY * 16;
 			state_switch("Bump")
 		}
 	}

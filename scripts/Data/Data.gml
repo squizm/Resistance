@@ -1,5 +1,5 @@
 #macro TILE_EMPTY 0
-#macro TILE_TREE 13
+#macro TILE_TREE 35
 #macro TILE_GRASS 5
 
 #macro TILE_BUILDING_TL 0
@@ -12,6 +12,15 @@
 #macro TILE_BUILDING_BC 7
 #macro TILE_BUILDING_BR 8
 
+enum COLOUR {
+	BG = $472d3C,
+	GREEN = $38d973,
+	BROWN = $bf7958,
+	DIRT = $7a444a,
+	TAN = $7a444a,
+	BLUE = $3cacd7,
+	RED = $e6482e
+}
 
 enum CHARACTER_TYPE{
 	PLAYER, 
