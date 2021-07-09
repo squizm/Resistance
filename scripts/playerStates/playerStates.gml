@@ -20,20 +20,13 @@ function player_state_idle() {
 		var tilemap_cell_width = tilemap_get_width(layer_tilemap_get_id(tilemapID));
 		var tilemap_cell_height = tilemap_get_height(layer_tilemap_get_id(tilemapID));
 	
-		if(destTileX > 0 && destTileX < tilemap_cell_width && destTileY > 0 && destTileY < tilemap_cell_height)
+		if(destTileX >= 0 && destTileX < tilemap_cell_width && destTileY >= 0 && destTileY < tilemap_cell_height)
 		{
 			if(TileIsWalkable(destTileX, destTileY)){
 				destX = destTileX * 16;
-			}
-	
-			if(TileIsWalkable(destTileX, destTileY)){
 				destY = destTileY * 16;
 			}
-			state_switch("Move")
-		} else {
-			destX = destTileX * 16;
-			destY = destTileY * 16;
-			state_switch("Bump")
+			state_switch("Move");
 		}
 	}
 }
