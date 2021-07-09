@@ -1,3 +1,4 @@
+/*
 if(isPlayer){
 	var txt = name
 	var panelWidth = 16+string_width(txt)
@@ -13,3 +14,4 @@ if(isPlayer){
 	draw_text(124, 64, HP)
 	draw_set_color(c_white)
 }
+*/

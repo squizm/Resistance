@@ -7,6 +7,8 @@ function setupCharacter(character,characterType){
 	with(character){
 		//Define States
 		if(characterType == CHARACTER_TYPE.PLAYER){
+			isPlayer = true;
+			image_index = 1;
 			state_create("Idle", player_state_idle);
 			state_create("Move", player_state_move);
 			state_create("Bump", player_state_bump);
