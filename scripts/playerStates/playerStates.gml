@@ -12,15 +12,21 @@ function player_state_idle() {
 
 	if(hmove != 0 or vmove != 0)
 	{
+		if(hmove != 0 and vmove != 0)
+		{
+			vmove = 0;
+		}		
+		
 		var myTileX = x div 16;
 		var myTileY = y div 16;
 		var destTileX = hmove + myTileX
 		var destTileY = vmove + myTileY
 		var tilemap_width = tilemap_get_width(global.map_id);
 		var tilemap_height = tilemap_get_height(global.map_id);
+
 	
 		if(destTileX >= 0 && destTileX < tilemap_width && destTileY >= 0 && destTileY < tilemap_height)
-		{
+		{			
 			if(IsTileEmpty(destTileX, destTileY)){
 				destX = destTileX * 16;
 				destY = destTileY * 16;

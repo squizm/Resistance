@@ -1,7 +1,8 @@
 function GenerateTerrain(){
 
-	var map_width = tilemap_get_width(layer_tilemap_get_id(layer_get_id("Tiles")));
-	var map_height = tilemap_get_height(layer_tilemap_get_id(layer_get_id("Tiles")));
+	var map_width = room_width/16;
+	var map_height = room_height/16;
+
 	layer_tilemap_destroy(layer_tilemap_get_id(layer_get_id("Tiles")));
 	global.map_id = layer_tilemap_create(layer_get_id("Tiles"),0,0,TileSet1,map_width,map_height);
 	
