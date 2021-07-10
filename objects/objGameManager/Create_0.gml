@@ -5,8 +5,15 @@ randomize();
 draw_set_font(fntSystem)
 
 global.activeCharacter = noone;
+GenerateTerrain()
 
-global.tileMap = layer_tilemap_get_id("tiles")
+
+repeat(10){
+	var player = instance_create_layer(room_width/2,room_height/2, "Instances", objCharacter);
+	setupCharacter(player, CHARACTER_TYPE.MONSTER)
+}
+
+
 var player = instance_create_layer(room_width/2,room_height/2, "Instances", objCharacter);
 setupCharacter(player, CHARACTER_TYPE.PLAYER)
 global.activeCharacter = player;

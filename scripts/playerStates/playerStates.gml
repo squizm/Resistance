@@ -16,13 +16,12 @@ function player_state_idle() {
 		var myTileY = y div 16;
 		var destTileX = hmove + myTileX
 		var destTileY = vmove + myTileY
-		var tilemapID = layer_get_id("Tiles");
-		var tilemap_cell_width = tilemap_get_width(layer_tilemap_get_id(tilemapID));
-		var tilemap_cell_height = tilemap_get_height(layer_tilemap_get_id(tilemapID));
+		var tilemap_width = tilemap_get_width(global.map_id);
+		var tilemap_height = tilemap_get_height(global.map_id);
 	
-		if(destTileX >= 0 && destTileX < tilemap_cell_width && destTileY >= 0 && destTileY < tilemap_cell_height)
+		if(destTileX >= 0 && destTileX < tilemap_width && destTileY >= 0 && destTileY < tilemap_height)
 		{
-			if(TileIsWalkable(destTileX, destTileY)){
+			if(IsTileEmpty(destTileX, destTileY)){
 				destX = destTileX * 16;
 				destY = destTileY * 16;
 			}

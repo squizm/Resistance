@@ -5,6 +5,20 @@
 function setupCharacter(character,characterType){
 
 	with(character){
+		var foundSpot = false;
+		while(!foundSpot)
+		{
+			var map_width = tilemap_get_width(global.map_id);
+			var map_height = tilemap_get_height(global.map_id);
+			var _x = irandom(map_width);
+			var _y = irandom(map_height);
+			if(IsTileEmpty(_x,_y)){
+				foundSpot = true;
+				character.x = _x*16;
+				character.y = _y*16;
+			}
+		}
+	
 		//Define States
 		if(characterType == CHARACTER_TYPE.PLAYER){
 			isPlayer = true;
