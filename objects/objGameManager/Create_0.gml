@@ -6,7 +6,7 @@ draw_set_font(fntSystem)
 
 global.activeCharacter = noone;
 //global.map_id = layer_tilemap_get_id(layer_get_id("Tiles"));
-GenerateTerrain()
+GenerateTerrain(TERRAIN_TYPE.CELLULAR);
 
 
 repeat(10){
