@@ -8,6 +8,7 @@
     {"id":{"name":"GenerateName","path":"scripts/GenerateName/GenerateName.yy",},"order":2,},
     {"id":{"name":"sprKenny","path":"sprites/sprKenny/sprKenny.yy",},"order":7,},
     {"id":{"name":"Data","path":"scripts/Data/Data.yy",},"order":6,},
+    {"id":{"name":"outline","path":"shaders/outline/outline.yy",},"order":0,},
     {"id":{"name":"playerStates","path":"scripts/playerStates/playerStates.yy",},"order":0,},
     {"id":{"name":"MonsterStates","path":"scripts/MonsterStates/MonsterStates.yy",},"order":1,},
     {"id":{"name":"objCamera","path":"objects/objCamera/objCamera.yy",},"order":2,},
@@ -54,7 +55,7 @@
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
-    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
+    {"isScaled":true,"autocrop":false,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [],
   "MetaData": {
