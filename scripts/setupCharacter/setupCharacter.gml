@@ -22,11 +22,12 @@ function setupCharacter(character,characterType){
 		//Define States
 		if(characterType == CHARACTER_TYPE.PLAYER){
 			isPlayer = true;
-			depth = -1000;
+			depth = -99;
 			image_index = 1;
 			state_create("Idle", player_state_idle);
 			state_create("Move", player_state_move);
 			state_create("Bump", player_state_bump);
+			state_create("Attack", player_state_attack);
 			//Set the default state
 			state_init("Idle");
 		} else {

@@ -64,7 +64,7 @@ function SetTile(cell_x,cell_y,tile_ID)
 {
 	var tile_data = tilemap_get(global.map_id, cell_x, cell_y);
 	tile_data = tile_set_index(tile_data, tile_ID);
-	tilemap_set(layer_tilemap_get_id(layer_get_id("Tiles")), tile_data, cell_x, cell_y);
+	tilemap_set(global.map_id, tile_data, cell_x, cell_y);
 }
 
 function GetTileIndex(cell_x,cell_y)
@@ -113,7 +113,6 @@ function inLOS(x1, y1, x2, y2, pixelInterval) {
 		var xCheck = x1 + lengthdir_x(dis,dir);
 		var yCheck = y1 + lengthdir_y(dis,dir);
 
-		var grid = global.activeCharacter.ds_visibleTiles
 		var tileData = GetTileIndex(xCheck div 16, yCheck div 16)
 		if(tileData == 35)
 		{
@@ -122,4 +121,18 @@ function inLOS(x1, y1, x2, y2, pixelInterval) {
 		dis += pixelInterval;
 	}
 	return true;
+}
+
+function isOccupied(tileX,tileY)
+{
+	var numCharacters = ds_list_size(global.characterList)
+	for(var i = 0; i < numCharacters; i++)
+	{
+		var tmp = global.characterList[| i];
+		if(tmp.x div 16 == tileX and tmp.y div 16 == tileY)
+		{
+			return tmp.id;
+		}
+	}
+	return noone;
 }

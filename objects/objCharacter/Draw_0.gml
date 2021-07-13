@@ -20,10 +20,10 @@ if(isPlayer){
 		for (var xx = 0; xx < room_width div 16 ; ++xx){
 		    for (var yy = 0; yy < room_height div 16; ++yy){ 
 				if(point_distance(x,y,xx*16,yy*16) div 16 <= 24){
-					if(inLOS(x+8,y+8,(xx*16)+8,(yy*16)+8,16)){						
+					if(inLOS(x,y,(xx*16),(yy*16),16)){						
 						ds_grid_set(ds_visibleTiles,xx,yy,true);
 						ds_grid_set(ds_seenTiles,xx,yy,true);
-						draw_rectangle(xx*16,yy*16, xx*16+16, yy*16+16, false);
+						draw_rectangle(xx*16,yy*16, xx*16+15, yy*16+15, false);
 					}else if(ds_grid_get(ds_seenTiles,xx,yy) == true){
 						draw_set_alpha(0.25);
 						draw_rectangle(xx*16,yy*16, xx*16+15, yy*16+15, false);

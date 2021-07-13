@@ -2,9 +2,11 @@
   "resources": [
     {"id":{"name":"TerrainFunctions","path":"scripts/TerrainFunctions/TerrainFunctions.yy",},"order":0,},
     {"id":{"name":"fntSystem","path":"fonts/fntSystem/fntSystem.yy",},"order":0,},
+    {"id":{"name":"objPopOut","path":"objects/objPopOut/objPopOut.yy",},"order":3,},
     {"id":{"name":"objGameManager","path":"objects/objGameManager/objGameManager.yy",},"order":0,},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"order":0,},
     {"id":{"name":"sprFaces","path":"sprites/sprFaces/sprFaces.yy",},"order":3,},
+    {"id":{"name":"fntDamage","path":"fonts/fntDamage/fntDamage.yy",},"order":1,},
     {"id":{"name":"GenerateName","path":"scripts/GenerateName/GenerateName.yy",},"order":2,},
     {"id":{"name":"sprKenny","path":"sprites/sprKenny/sprKenny.yy",},"order":7,},
     {"id":{"name":"Data","path":"scripts/Data/Data.yy",},"order":6,},
