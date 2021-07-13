@@ -30,6 +30,8 @@ function player_state_idle() {
 			if(IsTileEmpty(destTileX, destTileY)){
 				destX = destTileX * 16;
 				destY = destTileY * 16;
+				surface_free(surf_fov);
+				ds_grid_clear(ds_visibleTiles,false);
 			}
 			state_switch("Move");
 		}

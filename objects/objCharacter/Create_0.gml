@@ -25,3 +25,12 @@ upixelH = shader_get_uniform(outline, "pixelH");
 upixelW = shader_get_uniform(outline, "pixelW");
 texelW = texture_get_texel_width(sprite_get_texture(sprite_index,0));
 texelH = texture_get_texel_height(sprite_get_texture(sprite_index,0));
+
+// FOV surface
+ds_seenTiles = ds_grid_create(room_width/16,room_height/16);
+ds_grid_clear(ds_seenTiles, false);
+
+ds_visibleTiles = ds_grid_create(room_width/16,room_height/16);
+ds_grid_clear(ds_visibleTiles, false);
+
+surf_fov = noone;

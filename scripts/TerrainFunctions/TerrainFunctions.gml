@@ -102,3 +102,24 @@ function IsTileEmpty(cell_x,cell_y)
 	}
 	return false;
 }
+
+function inLOS(x1, y1, x2, y2, pixelInterval) {
+	var dis = 0;
+	var maxDis = point_distance(x1,y1,x2,y2);
+	var dir = point_direction(x1,y1,x2,y2);
+	var checks = maxDis/pixelInterval;
+	repeat (checks)
+	{ 
+		var xCheck = x1 + lengthdir_x(dis,dir);
+		var yCheck = y1 + lengthdir_y(dis,dir);
+
+		var grid = global.activeCharacter.ds_visibleTiles
+		var tileData = GetTileIndex(xCheck div 16, yCheck div 16)
+		if(tileData == 35)
+		{
+			return false;
+		}
+		dis += pixelInterval;
+	}
+	return true;
+}

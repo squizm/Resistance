@@ -22,6 +22,7 @@ function setupCharacter(character,characterType){
 		//Define States
 		if(characterType == CHARACTER_TYPE.PLAYER){
 			isPlayer = true;
+			depth = -1000;
 			image_index = 1;
 			state_create("Idle", player_state_idle);
 			state_create("Move", player_state_move);
